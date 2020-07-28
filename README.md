@@ -1,2 +1,1 @@
-# covid
-Warm summer cannot stop transmission of COVID-19 naturally calling for interventions
+This repository includes part of analysis for the paper "A warm summer is unlikely to stop transmission of COVID-19 naturally".
