@@ -12,6 +12,17 @@ theme_set(
     theme(strip.background = element_rect(size = 0, linetype = 1, colour = rgb(0.3, 0.3, 0.3)))
 )
 
+
+ggplot2::update_geom_defaults("point", list(shape = 21, fill = "gray", 
+                                            colour = "black", alpha = 1, size = 2))
+scale_colour_discrete <- function(...) {
+    scale_colour_brewer(..., palette = "Dark2")
+}
+ggplot2::theme_set(ggplot2::theme_light() + ggplot2::theme(axis.line = ggplot2::element_blank(), 
+                                                           panel.background = ggplot2::element_rect(fill = "transparent"), 
+                                                           plot.background = ggplot2::element_blank(), plot.title = ggplot2::element_text(hjust = 0.5, 
+                                                                                                                                          vjust = -10)))
+
 # custom function of boxplot
 data_summary <- function(x) {
    m <- mean(x)
@@ -22,7 +33,7 @@ data_summary <- function(x) {
 
 
 # load data
-load("../data/alldf1_5.RData")
+load("alldf1_5.RData")
 
 # summarize  the IP_date
 table(alldf1$IP_date < ymd(20200414))
