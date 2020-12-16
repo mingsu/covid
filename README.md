@@ -1,1 +1,1 @@
-This repository includes part of analysis for the paper "A warm summer is unlikely to stop transmission of COVID-19 naturally".
+This repository includes part of analysis for the paper published in **GeoHealth**,  [A Warm Summer is Unlikely to Stop Transmission of COVID‐19 Naturally](https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1029/2020GH000292).
